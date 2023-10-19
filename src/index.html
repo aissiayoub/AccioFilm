@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="styles.css">
+    <title>AccioFilm</title>
+  </head>
+
+  <body>
+    <!-- banniere -->
+    <div class="image">
+      <img src="assets/img/logo_banniere.png" >
+    </div>
+
+    <!-- navigation -->
+    <ul>
+      <li id="Trend"><a href="#Trending">Trending <img src="assets/img/fire2.png"></a></li>
+      <li id="Films"><a href="#Films">Films <img src="assets/img/film.png"></a></li>
+      <li id="Series"><a href="#Séries">Séries <img src="assets/img/tv.png"></a></li>
+      <li id="Acteurs"><a href="#Actors">Acteurs <img src="assets/img/contact.png"></a></li>
+      <li id="Langue">
+          <select name="langue" id="langselect">
+            <option value="en-US">English</option>
+            <option value="fr">Français</option>
+            <option value="ar">Arabe</option>
+            <option value="es">Espagnol</option>
+          </select>
+      </li>
+    </ul>
+
+    <!-- Barre de recherche -->
+    <form  id="form">
+      <input type="text" placeholder="Rechercher un film" id="search" class="search">
+    </form>
+
+    <!-- filtres par genre -->
+    <div id="tags"></div>
+
+    <!-- overlay -->
+    <div id="myNav" class="overlay">
+       <!-- Boutton pour fermer le overlay-->
+       <a href="javascript:void(0)" class="closebtn" onclick="fermerNav()">&times;</a>
+       <!-- Contenu Overlay -->
+       <div class="overlay-content" id="overlay-content"></div>
+    </div>
+
+     <!-- le contenu de la page -->
+    <main id="main"></main>
+
+    <!-- la pagination -->
+    <div class="pagination">
+        <div class="page" id="precedente" ><img src="assets/img/left.png"></div>
+        <div class="current" id="actuelle">1</div>
+        <div class="page" id="suivante" ><img src="assets/img/right.png"></div>
+    </div>
+  </body>
+
+
+</html>
